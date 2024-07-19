@@ -12,7 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class ScheduleResource extends Resource
 {
@@ -32,6 +32,7 @@ class ScheduleResource extends Resource
                                 Forms\Components\Select::make('user_id')
                                     ->relationship('user', 'name')
                                     ->searchable()
+                                    ->preload()
                                     ->required(),
                                 Forms\Components\Select::make('shift_id')
                                     ->relationship('shift', 'name')
