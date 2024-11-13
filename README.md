@@ -15,10 +15,10 @@ This is an absent system built with laravel filament.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ladanielha/absent-be
+   git clone https://github.com/ladanielha/Attendance-Office-System-BE
 2. Go to reposistory folder  
     ```bash
-    cd absent-be
+    cd [foldername]
 3. Install Composer  
     ```bash
     composer install
